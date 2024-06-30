@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --a:0;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.left {
+    width: 25vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    margin-right: -12px;
+
+}
+
+.right {
+    width: 85vw;
+    border-radius: 13px;
+    background: linear-gradient(#41414139, #000000);
+    position: relative;
+
+}
+
+.right h2 {
+    padding: 18px;
+    font-weight: 500;
+}
+
+.logo {
+    margin: 11px;
+    margin-bottom: -4px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li img {
+    width: 25px;
+    padding: 20px;
+    margin-bottom: -5px;
+
+}
+
+.home {
+    border-radius: 10px;
+}
+
+.lib {
+    display: flex;
+
+}
+
+.library {
+    border-radius: 10px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button img {
+    width: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.button img {
+    width: 20px;
+}
+
+.button .btn1 {
+    background-color: white;
+    color: black;
+    border: 5px solid white;
+}
+
+.button button {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    color: rgb(134, 134, 134);
+    padding: 5px;
+    border: 8px solid black;
+    border-radius: 23px;
+    padding-inline: 15px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+.button button:hover {
+    width: 105px;
+    height: 45px;
+    font-size: 16.5px;
+}
+
+.nav2 {
+    margin: 10px;
+
+}
+
+.footer {
+    display: flex;
+    font-size: 12px;
+    gap: 14px;
+    padding: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 55px;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+.n {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.n p {
+    color: rgb(159, 159, 159);
+    font-size: 14px;
+    font-weight: bolder;
+    padding-right: 10px;
+
+}
+
+.n h2:hover {
+    text-decoration: underline;
+}
+
+.n p:hover {
+    text-decoration: underline;
+}
+
+.artist {
+    display: flex;
+}
+.circle img {
+    width: 160px;
+    border-radius: 223px;
+    object-fit: contain;
+
+}
+.circle h4 {
+    font-weight: 500;
+    color: #e9e9e9;
+}
+
+.circle p {
+    font-weight: 100;
+    color: rgb(140, 138, 138);
+}
+
+.circle {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.square {
+    padding: 10px;
+    margin: 10px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.square h4 {
+    padding: 4px;
+}
+
+.square p {
+    padding-left: 4px;
+}
+
+.circle h4 {
+    padding: 4px;
+}
+
+.circle p {
+    padding-left: 4px;
+}
+.square img {
+    width: 155px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.square:hover {
+    background-color: rgba(80, 80, 80, 0.402);
+    --a:1;
+}
+
+.circle:hover {
+    background: linear-gradient(#44444440, #00000070);
+    --a:1;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 38vh;
+    overflow-y: auto;
+}
+
+.play .p {
+    position: absolute;
+    width: 10px;
+    bottom: 0px;
+    background-color: #dd53ff;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 88px;
+}
+
+.play1 .p1 {
+    background-color: #dd53ff;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 88px;
+}
+
+.circle .play .p {
+    opacity: var(--a);
+    position: absolute;
+    width: 30px;
+    bottom: 490px;
+}
+
+.square .play1 .p1 {
+    position: absolute;
+    width: 30px;
+    bottom: 200px;
+    opacity: var(--a);
+}
+.play .p:hover {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: var(--a);
+    transition: all 0.5s ease-out;
+}
+
+.play1 .p1:hover {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: var(--a);
+    transition: all 0.5s ease-out;
+}
+
+.playbar {
+    position: absolute;
+    position: fixed;
+    width: 50px;
+    display: flex;
+    gap: 20px;
+    bottom: 15px;
+}
+
+.seekbar {
+    width: 68vw;
+    height: 0.2vh;
+    background-color: #fff;
+    border: 1.5px solid white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.gol{
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    bottom: 0px;
+    left: 0%;
+    transition: left 0.5s;
+    border-radius: 23px;
+}
+.playcon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #0c0c0cc5;
+    background: linear-gradient(#000000a5, #000000);
+    width: 100vw;
+    height: 10vh;
+}
+
+.sm {
+    width: 15px;
+}
+
+.bi {
+    background-color: #ffffff;
+    /* height: 16px; */
+    border-radius: 23px;
+    border: 7px solid white;
+}
+
+.songlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    max-height: 60vh;
+}
+
+.songlist ul {
+    margin-top: -159px;
+}
+
+.songlist ul li {
+    font-size: 12px;
+    border: 2px solid rgba(42, 42, 42, 0.535);
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: #1c1c1c13;
+    margin-bottom: 6px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ar {
+    font-size: 9.9px;
+    color: rgb(131, 131, 131);
+    padding-top: 3.5px;
+}
+
+.songlist img {
+    width: 44px;
+    padding: 12px;
+}
+
+.playnow img {
+    width: 25px;
+}
+.playbar img{
+    cursor: pointer;
+    width: 25px;
+}
+.info div{
+    word-break: break-all;
+}
+.songinfo{
+    font-size: 13px;
+    margin-left: 40px;
+}
+.songinfo , .songtime{
+    display: flex;
+    align-items: center; 
+    width: auto;
+}
+.songtime{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.hamburger{
+    display: none;
+}
+.close{
+    display: none;
+}
+.volu{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+@media (max-width:1400px) {
+    .left{
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 420px;
+        background-color: black;
+        padding: 0;
+    }
+    .right{
+        width: 100vw;
+        overflow: auto;
+    }
+    .artist{
+        overflow: auto;
+    }
+    .album{
+        overflow: auto;
+        /* width: 100vw; */
+    }
+    .nav{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .hamburger{
+        display: flex;
+        width: 32px;
+        cursor: pointer;
+    }
+    .close{
+        position: absolute;
+        display: flex;
+        right: 20px;
+        top: 19px;
+        width: 30px;
+        cursor: pointer; 
+    }
+    .playcon{
+        height: 13vh;
+        background-color: #353535;
+    }
+    .playbar{
+        margin-left: -70px;
+        bottom: 7px;
+        width: 18px;
+    }
+    .playbar img{
+        width: 18px;
+    }
+    .bi {
+        height: 16px;
+    }
+    .circle .play .p {
+        width: 25px;
+        bottom: 339px;
+        margin-left:11px ;
+    }
+    
+    .square .play1 .p1 {
+        width: 30px;
+        bottom: 40px;
+        margin-left: -1px;
+    }
+    .songinfo{
+        width: auto;
+    }
+}
+
+@media (max-width:400px) {
+    .right{
+        margin: 0;
+        padding: 0;
+    }
+    .square{
+        width: 60px;
+        padding-left: 0;
+        padding-right: 65px;
+    }
+    .songinfo,.songtime{
+        font-size: 7px;
+        margin-left:5px;
+        margin-bottom: 20px;
+    }
+    body{
+        font-size: smaller;
+    }
+    .seekbar{
+        margin-left: -55px;
+        margin-top: 55px;
+    }
+    .artist img{
+        width: 60px;
+    }
+    .album img{
+        width: 120px;
+    }
+    .album{
+        max-height: 50vh;
+    }
+    .playbar{
+        margin-left: -70px;
+        bottom: 8px;
+        width: 20px;
+        margin-bottom: 15px;
+    }
+    .playbar img{
+        width: 15px;
+    }
+    .left{
+        width: 280px;
+    }
+    .bi {
+        height: 16px;
+    }
+    .circle .play .p {
+        width: 10px;
+        bottom: 399px;
+    }
+    
+    .square .play1 .p1 {
+        width: 20px;
+        bottom: 139px;
+    }
+}

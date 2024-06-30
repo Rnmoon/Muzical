@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left border">
+            <img class="close " src="SVG/close.svg" alt="">
+            <div class="home border m1 bg-grey">
+                <div class="logo invert">
+                    <img src="SVG/logo.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert" src="SVG/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="SVG/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library border m1 bg-grey">
+                <div class="lib flex">
+                    <ul>
+                        <li><img class="invert" src="SVG/lib.svg" alt="">Your Library</li>
+                        <!-- <img  class="invert" src="SVG/plus.svg" alt=""> -->
+                    </ul>
+
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right border m1 bg-grey">
+            <div class="header">
+                <div class="nav invert">
+                    <img class="hamburger" src="SVG/hamburger.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="button flex">
+                    <button>Sign up</button>
+                    <button class="btn1">Log in</button>
+                </div>
+            </div>
+            <div class="nav2">
+                <!-- <button  class="btn">All</button>
+                    <button class="btn">Music</button>
+                    <button class="btn">Podcast</button> -->
+
+            </div>
+            <div class="n">
+                <h2>Popular artist</h2>
+                <p>Show all</hp>
+
+            </div>
+            <div class="artist">
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/Justin_Bieber_-_Justice.png" alt="">
+                    <h4>Justin Beiber</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/380x380cc.webp" alt="">
+                    <h4>Shawn Mendes</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/taylor-swift-9sy-artistchart-ko8-344x344.jpg" alt="">
+                    <h4>Taylor Swift</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/220x220bb.webp" alt="">
+                    <h4>Ed Sheeran</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/632x632bb.webp" alt="">
+                    <h4>The Weekend</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="circle">
+                    <div class="play">
+                        <img class="p invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/ryan gosling.jpeg" alt="">
+                    <h4>Ryan Gosling</h4>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="n">
+                <h2>Popular albums</h2>
+                <p>Show all</hp>
+            </div>
+            <div class="album">
+                <div data-folder="The_Weekend" class="square">
+                    
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    <img src="Artist/819e05qxPEL.jpg" alt="">
+                    </div>
+                    <h4>Starboy</h4>
+                    <p>2023.Album</p>
+                </div>
+                <div data-folder="Justin_Beiber" class="square border">
+                    <div class="play1">
+                        <img class=" p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Album/632x632bb.webp" alt="">
+                    <h4>Changes</h4>
+                    <p>2020.Album</p>
+                </div>
+                <div data-folder="ShawnM" class="square">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/Shawn_Mendes_-_Shawn_Mendes_(Official_Album_Cover).png" alt="">
+                    <h4>Shawn Mendes</h4>
+                    <p>2019.Album</p>
+                </div>
+                <div  data-folder="Taylor_S" class="square">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Album/Taylor_Swift_-_Lover.png" alt="">
+                    <h4>Lover</h4>
+                    <p>2019.Album</p>
+                </div>
+                <div data-folder="Ed_Sheeran" class="square nex">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Album/X_cover.png" alt="">
+                    <h4>x(Deluxe Edition)</h4>
+                    <p>2019.Album</p>
+                </div>
+                <div data-folder="RyanG" class="square nex">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/ryan gosling.jpeg" alt="">
+                    <h4>Literally Me</h4>
+                    <p>2023.Album</p>
+                </div>
+                <div data-folder="Taylor_S" class="square border nex">
+                    <div class="play1">
+                        <img class=" p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/632x632bb.webp" alt="">
+                    <h4>After Hours</h4>
+                    <p>2020.Album</p>
+                </div>
+                <div data-folder="Justin_Beiber" class="square nex">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/Justin_Bieber_-_Justice.png" alt="">
+                    <h4>Justice</h4>
+                    <p>2021.Album</p>
+                </div>
+                <div data-folder="Ed_Sheeran" class="square nex">
+                    <div class="play1">
+                        <img class="p1 invert" src="SVG/play.svg" alt="">
+                    </div>
+                    <img src="Artist/220x220bb.webp" alt="">
+                    <h4>-(Deluxe)</h4>
+                    <p>2023.Album</p>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="playcon">
+            <div class="songinfo">
+
+            </div>
+            <div class="seekbar">
+                <div class="gol"></div>
+                </div>
+                <div class="playbar invert">
+                    <img id="prev"  class="sm" src="SVG/left.svg" alt="">
+                    <img id="play" class="bi invert" src="SVG/playb.svg" alt="">
+                    <img id="next" class="sm" src="SVG/right.svg" alt="">
+                    <div class="volu">
+                        <img id="vol" class="vol" src="SVG/volume.svg" alt="">
+                        <div class="range">
+                            <input type="range" name="volume">
+                        </div>
+                    </div>
+                </div>
+                <div class="songtime">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
