@@ -127,7 +127,7 @@ async function main() {
       currentSong.volume = parseInt(e.target.value)/100;
     })
 
-    Array.from(document.getElementsByClassName("card")).forEach(e=>{
+    Array.from(document.getElementsByClassName("square")).forEach(e=>{
       e.addEventListener("click",async item=>{
         songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)
       })
