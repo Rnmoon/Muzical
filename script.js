@@ -1,5 +1,5 @@
 console.log("Let's Write JavaScript!");
-
+let access_token="BQDHZ_aI3ftHvMDVLEStVjBy6exEWW51vLuRwk4_2zvKI-3Ql-I5XC7RI_U8Nl5IgoA8xSl3IyC9tob-wNjSloc7CBHU46I3nQwWPqjMQbegPZBV9jI";
 let songs;
 let currentSong = new Audio();
 let currFolder;
